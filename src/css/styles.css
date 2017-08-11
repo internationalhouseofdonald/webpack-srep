@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "king-basil";
+    src: url('../fonts/King-Basil-Lite.otf') format("opentype");
+}
+.bold {
+  font-weight: bold;
+}
+.header {
+  font-family: "covered-by-your-grace";
+  text-shadow: 1.5px 1px 0px #FFF, 3px 2px 0px rgba(20,20,20,0.15);
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+
+
+#hero {
+  /* Try making this a carousel*/
+  background-image: url("../images/pineapple-in-pool.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navbar {
+  width:100%;
+}
+#navbar-brand-text {
+  font-family: "dalliance-roman";
+  font-size: 2pc;
+}
+.navbar-toggler {
+  cursor:pointer;
+  border-radius: 0;
+}
+.my-navbar-toggler-icon {
+  color: #666;
+}
+.nav-link.disabled {
+  opacity: .5 !important;
+}
+.nav-link:hover {
+  opacity: .7;
+}
+.jumbotron {
+  background: none !important;
+}
+#jumbotron-title-subtitle-wrapper {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(255,255,255,.05)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,.05));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,.05));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.2), rgba(255,255,255,.05));
+}
+#jumbotron-title {
+  font-family: 'king-basil';
+  color: #252525 !important;
+  font-size: 5pc; /* Fits on my device */
+  text-shadow: 4px 3px 0px #FFF, 9px 8px 0px rgba(20,20,20,0.15);
+}
+#jumbotron-subtitle {
+  font-family: "wire-one";
+  font-size: 2.5rem;
+}
+.house {
+  width: 100%;
+}
+.pinterest-board-items {
+  display: none;
+}
+#pinterest-board-item-wrapper {
+  min-width: 350px;
+  min-height: 300px;
+  margin: auto;
+  background-image: url("../images/house.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 350px auto;
+   overflow: hidden; 
+}
+.card-content {
+  text-align: justify; 
+  text-indent: 20px;
+}
+.content {
+  text-indent: 20px;
+  padding: 0 10px;
+}
+.card {
+  border: 1px solid rgba(20,20,20,0.3);
+  box-shadow: 2px 1px 0px rgba(20,20,20,0.2);
+}
+
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 576px) {  
+  #jumbotron-title {
+   font-size: 7.9pc;
+  }
+  #pinterest-board-item-wrapper {
+    max-height: 600px;
+    background: none;
+  }
+  #pinterest-board-item-wrapper a {
+    width: 47%;
+  }
+  .pinterest-board-items {
+    display: flex;
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  #jumbotron-title {
+   font-size: 9pc;
+  }
+  #pinterest-board-item-wrapper a {
+    width: 47.8%;
+  }
+  #pinterest-board-item-wrapper {
+    height: 800px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #jumbotron-title {
+    font-size: 10pc;
+  }
+  #pinterest-board-item-wrapper {
+    max-height: 992px;
+  }
+  #pinterest-board-item-wrapper a {
+    width: 32%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  #pinterest-board-item-wrapper {
+    max-height: 1200px;
+  }
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+.house {
+  width: 100%;
+}
+.pinterest-board-items {
+  display: none;
+}
+#pinterest-board-item-wrapper {
+  min-width: 350px;
+  min-height: 300px;
+  margin: auto;
+  background-image: url("../images/house.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 350px auto;
+  overflow: hidden;
+}
+
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 576px) {  
+  #pinterest-board-item-wrapper {
+    max-height: 600px;
+    background: none;
+  }
+  #pinterest-board-item-wrapper a {
+    width: 47%;
+  }
+  .pinterest-board-items {
+    display: flex;
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  #pinterest-board-item-wrapper a {
+    width: 47.8%;
+  }
+  #pinterest-board-item-wrapper {
+    height: 800px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #pinterest-board-item-wrapper {
+    max-height: 992px;
+  }
+  #pinterest-board-item-wrapper a {
+    width: 32%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  #pinterest-board-item-wrapper {
+    max-height: 1200px;
+  }
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
